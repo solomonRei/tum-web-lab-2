@@ -114,6 +114,28 @@ body {
     z-index: 1;
 }
 
+#how-it-works {
+    background: var(--light-blue);
+    position: relative;
+    overflow: hidden;
+}
+
+#how-it-works::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg,
+        rgba(79, 70, 229, 0.05) 0%,
+        rgba(99, 102, 241, 0.05) 100%
+    );
+    border-radius: 50%;
+    transform: translateY(-25%);
+    z-index: 1;
+}
+
 .heading {
     font-size: 2.8em;
     margin-bottom: 25px;
@@ -143,4 +165,107 @@ body {
     background: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#how-it-works .button {
+    background: linear-gradient(135deg, 
+        #4f46e5 0%,
+        #4338ca 100%
+    );
+    color: white;
+}
+
+#how-it-works .button:hover {
+    background: linear-gradient(135deg, 
+        #4338ca 0%,
+        #3730a3 100%
+    );
+}
+
+.how-it-works-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.steps-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.step-card {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(79, 70, 229, 0.1);
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(79, 70, 229, 0.15);
+}
+
+.icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.step-heading {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+.step-text {
+    font-size: 1.1em;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+
+.demo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 2px solid #e2e8f0;
+}
+
+.demo-heading {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+.demo-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    height: 400px;
+}
+
+.demo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
 }
