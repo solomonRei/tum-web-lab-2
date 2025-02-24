@@ -12,6 +12,14 @@ body {
     padding-top: 80px;
 }
 
+:root {
+    --gradient-start: #4f46e5;
+    --gradient-middle: #6366f1;
+    --gradient-end: #818cf8;
+    --white: #ffffff;
+    --light-blue: #f8fafc;
+}
+
 .header {
     background: rgba(30, 41, 59, 0.95);
     padding: 20px;
@@ -74,4 +82,65 @@ body {
 
 .nav-ul-li-a:hover::after {
     width: 100%;
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+#hero {
+    background: linear-gradient(135deg, 
+        rgba(79, 70, 229, 0.97) 0%,
+        rgba(99, 102, 241, 0.97) 100%
+    );
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: var(--white);
+    border-radius: 50%;
+    transform: translateY(75%);
+    z-index: 1;
+}
+
+.heading {
+    font-size: 2.8em;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.paragraph {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 15px 35px;
+    background: var(--white);
+    color: var(--gradient-start);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
