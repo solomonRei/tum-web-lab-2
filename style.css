@@ -211,6 +211,24 @@ body {
     color: #333;
 }
 
+#cta {
+    background: linear-gradient(135deg,
+        rgba(79, 70, 229, 0.97) 0%,
+        rgba(129, 140, 248, 0.97) 100%
+    );
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
 .how-it-works-container {
     position: relative;
     z-index: 2;
@@ -455,4 +473,26 @@ body {
     position: relative;
     z-index: 2;
     margin-top: 60px;
+}
+
+.text-link {
+    color: white;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.text-link:hover {
+    opacity: 0.8;
+}
+
+#why-it-matters .pain-points,
+#why-it-matters .savings-highlight,
+#why-it-matters .cta-container {
+    position: relative;
+    z-index: 2;
+}
+
+#how-it-works .heading {
+    position: relative;
+    z-index: 2;
 }
