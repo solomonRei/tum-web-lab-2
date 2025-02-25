@@ -556,3 +556,15 @@ body {
 .section + .section {
     margin-top: -1px;
 }
+
+.footer {
+    background-color: rgba(30, 41, 59, 0.98);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-paragraph {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.9);
+}
