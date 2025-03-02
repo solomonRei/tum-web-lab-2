@@ -6,6 +6,7 @@
     <title>Find Discounts Instantly</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -25,10 +26,37 @@
         </nav>
     </header>
 
+    <div class="mobile-quick-actions">
+        <a href="#cta" class="quick-action-btn">
+            <span class="quick-icon"><i class="fa-solid fa-piggy-bank"></i></span>
+            Start Saving
+        </a>
+        <a href="#how-it-works" class="quick-action-btn">
+            <span class="quick-icon"><i class="fa-solid fa-info-circle"></i></span>
+            How It Works
+        </a>
+        <a href="tel:+37312345678" class="quick-action-btn">
+            <span class="quick-icon"><i class="fa-solid fa-phone"></i></span>
+            Call Us
+        </a>        
+    </div>
+
     <section id="hero" class="section">
         <h1 class="heading">Find Grocery Discounts Instantly with AI</h1>
         <p class="paragraph">Never miss a sale on your favorite foods. Save up to 40% on your weekly grocery shopping with real-time deals from top stores.</p>
         <button class="button" onclick="window.location.href='#cta'">Start Saving Today</button>
+    </section>
+
+    <section class="mobile-promo-section">
+        <div class="mobile-promo-content">
+            <span class="mobile-promo-badge">Mobile Exclusive</span>
+            <h2 class="mobile-promo-title">Get 10% Extra Savings</h2>
+            <p class="mobile-promo-text">Download our mobile app today and get additional discounts on your first purchase!</p>
+            <div class="app-store-buttons">
+                <img src="images/app-store.png" alt="Download on App Store" class="store-button">
+                <img src="images/play-store.png" alt="Get it on Google Play" class="store-button">
+            </div>
+        </div>
     </section>
 
     <section id="partners" class="section">

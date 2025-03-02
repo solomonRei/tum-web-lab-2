@@ -775,3 +775,88 @@ body {
         border-bottom: none;
     }
 }
+
+.mobile-quick-actions,
+.mobile-promo-section {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-quick-actions {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 12px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        justify-content: space-around;
+    }
+
+    .quick-action-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #1e293b;
+        font-size: 0.8em;
+        gap: 4px;
+    }
+
+    .quick-icon {
+        font-size: 1.5em;
+    }
+
+    .mobile-promo-section {
+        display: block;
+        background: linear-gradient(135deg, #4f46e5 0%, #818cf8 100%);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 12px;
+        color: white;
+    }
+
+    .mobile-promo-content {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .mobile-promo-badge {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    .mobile-promo-title {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .mobile-promo-text {
+        font-size: 1em;
+        margin-bottom: 20px;
+        opacity: 0.9;
+    }
+
+    .app-store-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .store-button {
+        height: 40px;
+        width: auto;
+    }
+
+    body {
+        padding-bottom: 70px;
+    }
+}
