@@ -865,3 +865,97 @@ body {
         padding-bottom: 70px;
     }
 }
+
+.mascot {
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    z-index: 998;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    animation: mascotAppear 0.5s ease 2s forwards;
+}
+
+@keyframes mascotAppear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mascot-content {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.mascot-svg {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+.mascot-svg:hover {
+    transform: scale(1.1);
+}
+
+.mascot-bubble {
+    background: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 200px;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: bubbleAppear 0.5s ease 2.5s forwards;
+}
+
+@keyframes bubbleAppear {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mascot-bubble::before {
+    content: '';
+    position: absolute;
+    right: -8px;
+    bottom: 15px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+.mascot-bubble p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #1e293b;
+}
+
+.nav-toggle:checked ~ .mascot {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mascot {
+        right: 10px;
+        bottom: 80px;
+    }
+
+    .mascot-svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mascot-bubble {
+        max-width: 150px;
+        padding: 10px 15px;
+    }
+}
