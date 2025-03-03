@@ -10,7 +10,16 @@ Find Discounts Instantly is a modern, responsive landing page that helps users f
 - Sections explaining the platform's benefits and how it works
 - Social proof/testimonials (coming soon)
 
+## Live Demo:
+[Live Demo](https://solomonRei.github.io/tum-web-lab-2/)
+
 ## 🌟 Screenshots
+
+### Responsive website & mobile only elements 
+![Responsive website](res/responsive.png)
+
+### Mascot 
+![Mascot](res/mascot.png)
 
 ### Hero Section
 ![Hero Section](res/hero.png)
@@ -23,5 +32,3 @@ Find Discounts Instantly is a modern, responsive landing page that helps users f
 
 ### Call to Action (CTA)
 ![CTA Section](res/cta.png)
-## Live Demo:
-[Live Demo](https://solomonRei.github.io/tum-web-lab-2/)
