@@ -94,29 +94,6 @@ body {
     z-index: 2;
 }
 
-#hero {
-    background: linear-gradient(135deg, 
-        rgba(79, 70, 229, 0.97) 0%,
-        rgba(99, 102, 241, 0.97) 100%
-    );
-    color: var(--white);
-    position: relative;
-    overflow: hidden;
-}
-
-#hero::after {
-    content: '';
-    position: absolute;
-    bottom: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: var(--white);
-    border-radius: 50%;
-    transform: translateY(75%);
-    z-index: 1;
-}
-
 #how-it-works {
     background: var(--light-blue);
     position: relative;
@@ -130,59 +107,15 @@ body {
     right: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(135deg,
-        rgba(79, 70, 229, 0.05) 0%,
-        rgba(99, 102, 241, 0.05) 100%
-    );
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(99, 102, 241, 0.05) 100%);
     border-radius: 50%;
     transform: translateY(-25%);
     z-index: 1;
 }
 
-.heading {
-    font-size: 2.8em;
-    margin-bottom: 25px;
-    font-weight: bold;
-}
-
-.paragraph {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-.button {
-    padding: 15px 35px;
-    background: var(--white);
-    color: var(--gradient-start);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.2em;
-    margin-top: 20px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.button:hover {
-    background: white;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-#how-it-works .button {
-    background: linear-gradient(135deg, 
-        #4f46e5 0%,
-        #4338ca 100%
-    );
-    color: white;
-}
-
-#how-it-works .button:hover {
-    background: linear-gradient(135deg, 
-        #4338ca 0%,
-        #3730a3 100%
-    );
+#how-it-works .container {
+    position: relative;
+    z-index: 2;
 }
 
 #why-it-matters {
