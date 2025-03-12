@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+  }
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:-translate-y-1 hover:shadow-hover;
+  }
+  .btn-light {
+    @apply bg-white text-gray-900 hover:-translate-y-1 hover:shadow-hover;
+  }
+  .btn-outline {
+    @apply border-2 border-white text-white hover:-translate-y-1 hover:bg-white/10;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-soft hover:-translate-y-2 transition-all duration-300 hover:shadow-hover;
+  }
+  
+  .nav-link {
+    @apply text-white/90 hover:text-white font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary-500 after:to-primary-400 after:transition-all hover:after:w-full;
+  }
+  
+  .feature-icon {
+    @apply w-12 h-12 flex items-center justify-center rounded-full bg-primary-50 text-primary-600 mb-4;
+  }
+}
+
+/* Custom animations */
+@keyframes mascotAppear {
+  to {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+.mascot-animate {
+  animation: mascotAppear 0.5s ease 2s forwards;
+} 
