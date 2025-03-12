@@ -13,9 +13,12 @@ body {
 }
 
 :root {
+    --bs-primary: #4f46e5;
+    --bs-primary-rgb: 79, 70, 229;
     --gradient-start: #4f46e5;
     --gradient-middle: #6366f1;
     --gradient-end: #818cf8;
+    --bs-body-bg: #f8fafc;
     --white: #ffffff;
     --light-blue: #f8fafc;
 }
@@ -870,7 +873,7 @@ body {
     position: fixed;
     right: -196px;
     bottom: 90px;
-    z-index: 998;
+    z-index: 1030;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.5s ease;
@@ -1088,4 +1091,117 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(var(--bs-primary-rgb), 0.2);
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(var(--bs-primary-rgb), 0.15);
+}
+
+.header {
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.section {
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-gradient {
+    background: linear-gradient(135deg, 
+        rgba(79, 70, 229, 0.97) 0%,
+        rgba(99, 102, 241, 0.97) 100%
+    );
+    color: white;
+}
+
+.step-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.partner-card {
+    padding: 2rem;
+    text-align: center;
+    height: 100%;
+}
+
+.partner-logo {
+    max-height: 80px;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 0;
+    }
+
+    .navbar-collapse {
+        background: rgba(30, 41, 59, 0.98);
+        padding: 1rem;
+        border-radius: 0 0 12px 12px;
+    }
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.rounded-xl {
+    border-radius: 12px !important;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+}
+
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
 }
